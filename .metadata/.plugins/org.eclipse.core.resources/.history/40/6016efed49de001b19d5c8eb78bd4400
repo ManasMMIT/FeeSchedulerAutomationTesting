@@ -1,0 +1,62 @@
+package com.feescheduler.qa.login;
+
+
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.feescheduler.qa.base.BaseTest;
+import com.feescheduler.qa.pages.FeeSchedulerLogin;
+import com.feescheduler.qa.pages.HomePage;
+
+
+public class HomePageTest extends BaseTest {
+	FeeSchedulerLogin feeschedulerlogin;
+	HomePage homePage;
+
+	public HomePageTest() {
+		super();
+	}
+
+	@BeforeMethod
+	public void setUP() throws InterruptedException {
+		initialization();
+		feeschedulerlogin = new FeeSchedulerLogin();
+		feeschedulerlogin.clickOnLogin();
+		Thread.sleep(3000);
+		homePage = feeschedulerlogin.login(prop.getProperty("username"), prop.getProperty("password"));
+		Thread.sleep(3000);
+		String title = feeschedulerlogin.verifyPageTitle();
+		Thread.sleep(5000);
+		if (title.equalsIgnoreCase("Login – ReimbursementCodes")) {
+			feeschedulerlogin.TerminateSession();
+			Thread.sleep(5000);
+			homePage = feeschedulerlogin.login_afterTermination(prop.getProperty("username"),
+					prop.getProperty("password"));
+			Thread.sleep(10000);
+
+		}
+
+	}
+
+	@Test(priority = 1)
+	public void feeSchedulerTabTest() {
+
+		boolean status = homePage.feeScheduerIsDisplayed();
+		System.out.println(status);
+		Assert.assertTrue(status);
+	}
+
+	@Test(priority = 2)
+	public void clickOnFeeSchedulerTabTest(){
+		homePage.visibleFeeSchedulerTab();	
+		homePage.clickOnFeeSchedulerTab();
+	}
+
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
+	}
+
+}

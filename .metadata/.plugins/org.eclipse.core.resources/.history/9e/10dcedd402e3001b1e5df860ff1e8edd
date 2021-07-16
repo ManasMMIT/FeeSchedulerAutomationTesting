@@ -1,0 +1,5 @@
+package com.feescheduler.qa.ExtentReportListener;
+
+public class AllureReportListener {
+
+}

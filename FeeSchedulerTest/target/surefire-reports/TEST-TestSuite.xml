@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="323.281" tests="4" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="15"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Software\eclipse-java-2020-12-R-win32-x86_64\eclipse\plugins\org.eclipse.m2e.maven.runtime_1.16.0.20200610-1735\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Software\eclipse-java-2020-12-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507\jre\bin"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="C:\Automation\Fee_Scheduler\FeeSchedulerTest\EMBEDDED"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\manas jena"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-10-20"/>
+    <property name="java.home" value="C:\Software\eclipse-java-2020-12-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="15.0.1+9-18"/>
+    <property name="user.name" value="manas jena"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\MANASJ~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="15.0.1"/>
+    <property name="user.dir" value="C:\Automation\Fee_Scheduler\FeeSchedulerTest"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Automation\Fee_Scheduler\FeeSchedulerTest"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Software\eclipse-java-2020-12-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Software/eclipse-java-2020-12-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507/jre/bin/server;C:/Software/eclipse-java-2020-12-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Gradle\gradle-6.8\bin;C:\Automation\allure-2.14.0\bin;C:\Users\manas jena\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\manas jena\AppData\Local\Programs\Python\Python39\;C:\Users\manas jena\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.1.1\bin;;C:\Software\eclipse-java-2020-12-R-win32-x86_64\eclipse;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="15.0.1+9-18"/>
+    <property name="classworlds.conf" value="C:\Automation\Fee_Scheduler\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5028788695735702427.tmp"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="59.0"/>
+  </properties>
+  <testcase name="loginPageTitleTest" classname="com.feescheduler.qa.login.LoginPageTest" time="0.146"/>
+  <testcase name="loginTest" classname="com.feescheduler.qa.login.LoginPageTest" time="13.723">
+    <failure message="expected [RJHS] but found []" type="java.lang.AssertionError">java.lang.AssertionError: expected [RJHS] but found []
+	at com.feescheduler.qa.login.LoginPageTest.loginTest(LoginPageTest.java:84)
+</failure>
+    <system-out><![CDATA[C:\Automation\Fee_Scheduler\FeeSchedulerTest
+Before navigating to: 'https://rc3devfrontend.reimbursementcodes.com/'
+Navigated to:'https://rc3devfrontend.reimbursementcodes.com/'
+C:\Automation\Fee_Scheduler\FeeSchedulerTest
+I am in onTestStart method loginTest start
+Trying to find Element By : By.xpath: //*[@id='loginbtn']
+Found Element By : By.xpath: //*[@id='loginbtn']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (49b9687fd26782258f483f6c9273a6dc)] -> xpath: //*[@id='loginbtn']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (49b9687fd26782258f483f6c9273a6dc)] -> xpath: //*[@id='loginbtn']]
+Trying to find Element By : By.name: username
+Found Element By : By.name: username
+Trying to find Element By : By.name: password
+Found Element By : By.name: password
+Trying to find Element By : By.xpath: //*[@id='btnLoginSubmit1']
+Found Element By : By.xpath: //*[@id='btnLoginSubmit1']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (49b9687fd26782258f483f6c9273a6dc)] -> xpath: //*[@id='btnLoginSubmit1']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (49b9687fd26782258f483f6c9273a6dc)] -> xpath: //*[@id='btnLoginSubmit1']]
+C:\Automation\Fee_Scheduler\FeeSchedulerTest
+
+I am in onTestFailure method loginTest failed
+Screenshot captured for test case:loginTest
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 48634
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 16, 2021 8:39:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="navigateToFeeSchedulerTest" classname="com.feescheduler.qa.homepagetestcases.HomePageNavigateFSTest" time="11.53"/>
+  <testcase name="createNewFeeSchedulerTest" classname="com.feescheduler.qa.feeschedulertestcases.CreateNewFeeSchedulerTest" time="157.361">
+    <failure message="element not interactable&#10;  (Session info: chrome=91.0.4472.124)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LAPTOP-VUPTS4LP&apos;, ip: &apos;192.168.225.141&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\MANASJ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b070f16181343cd5d47c42b83c7482a4" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=91.0.4472.124)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-VUPTS4LP', ip: '192.168.225.141', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\MANASJ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b070f16181343cd5d47c42b83c7482a4
+	at com.feescheduler.qa.feeschedulertestcases.CreateNewFeeSchedulerTest.createNewFeeSchedulerTest(CreateNewFeeSchedulerTest.java:157)
+</failure>
+    <system-out><![CDATA[C:\Automation\Fee_Scheduler\FeeSchedulerTest
+Before navigating to: 'https://rc3devfrontend.reimbursementcodes.com/'
+Navigated to:'https://rc3devfrontend.reimbursementcodes.com/'
+C:\Automation\Fee_Scheduler\FeeSchedulerTest
+C:\Automation\Fee_Scheduler\FeeSchedulerTest
+Trying to find Element By : By.xpath: //*[@id='loginbtn']
+Found Element By : By.xpath: //*[@id='loginbtn']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (b070f16181343cd5d47c42b83c7482a4)] -> xpath: //*[@id='loginbtn']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (b070f16181343cd5d47c42b83c7482a4)] -> xpath: //*[@id='loginbtn']]
+Trying to find Element By : By.name: username
+Found Element By : By.name: username
+Trying to find Element By : By.name: password
+Found Element By : By.name: password
+Trying to find Element By : By.xpath: //*[@id='btnLoginSubmit1']
+Found Element By : By.xpath: //*[@id='btnLoginSubmit1']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (b070f16181343cd5d47c42b83c7482a4)] -> xpath: //*[@id='btnLoginSubmit1']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (b070f16181343cd5d47c42b83c7482a4)] -> xpath: //*[@id='btnLoginSubmit1']]
+C:\Automation\Fee_Scheduler\FeeSchedulerTest
+Login – ReimbursementCodes
+Trying to find Element By : By.xpath: //*[@id='terminateSession']
+Found Element By : By.xpath: //*[@id='terminateSession']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (b070f16181343cd5d47c42b83c7482a4)] -> xpath: //*[@id='terminateSession']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (b070f16181343cd5d47c42b83c7482a4)] -> xpath: //*[@id='terminateSession']]
+Trying to find Element By : By.name: username
+Found Element By : By.name: username
+Trying to find Element By : By.name: password
+Found Element By : By.name: password
+Trying to find Element By : By.xpath: //*[@id='btnLoginSubmit']
+Found Element By : By.xpath: //*[@id='btnLoginSubmit']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (b070f16181343cd5d47c42b83c7482a4)] -> xpath: //*[@id='btnLoginSubmit']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (b070f16181343cd5d47c42b83c7482a4)] -> xpath: //*[@id='btnLoginSubmit']]
+C:\Automation\Fee_Scheduler\FeeSchedulerTest
+I am in onTestStart method createNewFeeSchedulerTest start
+Trying to find Element By : By.xpath: //a/span[contains(text(),'Fee Scheduler')]
+Found Element By : By.xpath: //a/span[contains(text(),'Fee Scheduler')]
+No. of tabs: 1
+Trying to find Element By : By.xpath: //button[contains(text(),'Kill Session and Open')]
+Found Element By : By.xpath: //button[contains(text(),'Kill Session and Open')]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (b070f16181343cd5d47c42b83c7482a4)] -> xpath: //button[contains(text(),'Kill Session and Open')]]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (b070f16181343cd5d47c42b83c7482a4)] -> xpath: //button[contains(text(),'Kill Session and Open')]]
+Trying to find Element By : By.xpath: //li/a/span[contains(text(),'Fee Schedule')]
+Found Element By : By.xpath: //li/a/span[contains(text(),'Fee Schedule')]
+Trying to find Element By : By.xpath: //button[contains(text(),'Fee Schedule')]
+Found Element By : By.xpath: //button[contains(text(),'Fee Schedule')]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (b070f16181343cd5d47c42b83c7482a4)] -> xpath: //button[contains(text(),'Fee Schedule')]]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (b070f16181343cd5d47c42b83c7482a4)] -> xpath: //button[contains(text(),'Fee Schedule')]]
+Trying to find Element By : By.xpath: //*[@id='feeScheduleName']
+Found Element By : By.xpath: //*[@id='feeScheduleName']
+Trying to find Element By : By.xpath: //*[@id='feeScheduleDesc']
+Found Element By : By.xpath: //*[@id='feeScheduleDesc']
+Trying to find Element By : By.xpath: //*[@id='effectiveDate']
+Found Element By : By.xpath: //*[@id='effectiveDate']
+Trying to find Element By : By.xpath: //*[@id='terminationDate']
+Found Element By : By.xpath: //*[@id='terminationDate']
+Trying to find Element By : By.xpath: //td[contains(text(),'AWP (Average Wholesale Price)')]//following::input[1]
+Found Element By : By.xpath: //td[contains(text(),'AWP (Average Wholesale Price)')]//following::input[1]
+Trying to find Element By : By.xpath: //td[contains(text(),'AWP (Average Wholesale Price)')]//following::input[2]
+Found Element By : By.xpath: //td[contains(text(),'AWP (Average Wholesale Price)')]//following::input[2]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (b070f16181343cd5d47c42b83c7482a4)] -> xpath: //td[contains(text(),'AWP (Average Wholesale Price)')]//following::input[2]]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (b070f16181343cd5d47c42b83c7482a4)] -> xpath: //td[contains(text(),'AWP (Average Wholesale Price)')]//following::input[2]]
+Trying to find Element By : By.xpath: //button[contains(text(),'Save')]
+Found Element By : By.xpath: //button[contains(text(),'Save')]
+Trying to find Element By : By.xpath: //*[@placeholder='Search Fee Scheduler']
+Found Element By : By.xpath: //*[@placeholder='Search Fee Scheduler']
+Exception occured: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=91.0.4472.124)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-VUPTS4LP', ip: '192.168.225.141', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\MANASJ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b070f16181343cd5d47c42b83c7482a4
+I am in onTestFailure method createNewFeeSchedulerTest failed
+Screenshot captured for test case:createNewFeeSchedulerTest
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 20290
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 16, 2021 8:41:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>

@@ -1,0 +1,110 @@
+package com.feescheduler.qa.pages;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.feescheduler.qa.base.BaseTest;
+
+import io.qameta.allure.Step;
+
+public class FeeSchedulerPage extends BaseTest{
+	
+	
+	@FindBy(xpath = "//li/a/span[contains(text(),'Fee Schedule')]")
+	WebElement FeeSchedulerMgmt;
+	
+	@FindBy(xpath = "//button[contains(text(),'Fee Schedule')]")
+	WebElement CreateNewButton;
+	
+	@FindBy(xpath = "//*[@id='feeScheduleName']")
+	WebElement feeScheduleName;
+	
+	@FindBy(xpath = "//*[@id='feeScheduleDesc']")
+	WebElement feeScheduleDesc;
+	
+	@FindBy(xpath = "//*[@id='effectiveDate']")
+	WebElement effectiveDate;
+	
+	@FindBy(xpath = "//*[@id='terminationDate']")
+	WebElement terminationDate;
+	
+	@FindBy(xpath = "//td[contains(text(),'AWP (Average Wholesale Price)')]//following::input[1]")
+	WebElement AWP_percentage_Input;
+	
+	@FindBy(xpath = "//td[contains(text(),'AWP (Average Wholesale Price)')]//following::input[1]")
+	WebElement AWP_CheckBox;
+	
+	@FindBy(xpath = "//button[contains(text(),'Save')]")
+	WebElement SaveButton;
+	
+	@FindBy(xpath = "//*[@placeholder='Search Fee Scheduler']")
+	WebElement searchFeeScheduler;
+	
+	@FindBy(xpath = "//button[contains(text(),'Search')]")
+	WebElement searchButton;
+	
+	
+	
+	public FeeSchedulerPage() {
+		PageFactory.initElements(driver, this);
+	}
+	
+	@Step("clicking on Fee schedule management tab..")
+	public void clickOnFeeSchedulerMgmt()
+	{
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click();", FeeSchedulerMgmt);
+		
+	}
+	
+	@Step("clicking on Fee schedule management tab..")
+	public void clickOnCreateNewButton()
+	{
+		CreateNewButton.click();
+	}
+	
+	@Step("Getting title name..")
+	public String getTitle()
+	{
+		return driver.getTitle();
+	}
+	
+	@Step("Entering fee scheduler name...")
+	public void enterFeeSchedulerName(String str)
+	{
+		feeScheduleName.sendKeys(str);
+		
+	}
+	
+	@Step("Entering fee scheduler description...")
+	public void enterFeeSchedulerDesc(String str)
+	{
+		feeScheduleDesc.sendKeys(str);
+	}
+	
+	@Step("Selecting effective date...")
+	public void selectEffectiveDate(String str)
+	{
+		effectiveDate.sendKeys(str);
+	}
+	
+	@Step("Selecting termination date...")
+	public void selectTerminateDate(String str)
+	{
+		terminationDate.sendKeys(str);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+}

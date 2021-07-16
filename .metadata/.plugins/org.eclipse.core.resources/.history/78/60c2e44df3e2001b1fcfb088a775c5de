@@ -1,0 +1,85 @@
+package com.feescheduler.qa.login;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.feescheduler.qa.base.BaseTest;
+import com.feescheduler.qa.pages.FeeSchedulerLogin;
+import com.feescheduler.qa.pages.HomePage;
+
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+
+/**
+ * <b> Login into Fee Scheduler</b>
+ * <p>
+ * 1.Login into Application.
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * @author manas jena
+ *
+ */
+public class LoginPageTest extends BaseTest {
+	FeeSchedulerLogin feeschedulerlogin;
+	HomePage homePage;
+
+	public LoginPageTest() {
+		super();
+
+	}
+
+	@BeforeMethod
+	public void setUp() {
+		initialization();
+		feeschedulerlogin = new FeeSchedulerLogin();
+
+	}
+	
+	
+	@Test(priority = 1, description = "Verifying login page title test")
+	@Severity(SeverityLevel.NORMAL)
+	@Description("TestCase Description : Verify Fee Scheduler login page title test")
+	@Story("Story Name : To check Fee scheduler login page title")
+	public void loginPageTitleTest()
+	{
+		String title_loginPage = feeschedulerlogin.verifyPageTitle();
+		Assert.assertEquals(title_loginPage, "ReimbursementCodes");
+	}
+	
+
+	@Test(priority = 2)
+	public void loginTest() throws InterruptedException {
+		feeschedulerlogin.clickOnLogin();
+		//Thread.sleep(3000);
+		homePage=feeschedulerlogin.login(prop.getProperty("username"), prop.getProperty("password"));
+		Thread.sleep(3000);
+		String title = feeschedulerlogin.verifyPageTitle();
+		//Thread.sleep(5000);
+		if (title.equalsIgnoreCase("Login � ReimbursementCodes")) {
+			feeschedulerlogin.TerminateSession();
+			//Thread.sleep(5000);
+			homePage =	feeschedulerlogin.login_afterTermination(prop.getProperty("username"), prop.getProperty("password"));
+			//Thread.sleep(10000);
+			String title1 = feeschedulerlogin.verifyPageTitle();
+			title = title1;
+		}
+		Assert.assertEquals(title, "RJHS");
+	}
+
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
+	}
+
+}

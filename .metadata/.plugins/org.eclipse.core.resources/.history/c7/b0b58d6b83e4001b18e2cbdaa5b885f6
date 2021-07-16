@@ -1,0 +1,15 @@
+url = https://rc3devfrontend.reimbursementcodes.com/
+username = FSMMIT1
+password = FSMMIT1
+
+
+browser = chrome
+#browser = edge
+#browser = firefox
+
+
+PAGE_LOADTIMEOUT= 50
+IMPLICIT_WAIT= 50
+
+fs_loggedin_title=RJHS
+fs_login_page_title=ReimbursementCodes

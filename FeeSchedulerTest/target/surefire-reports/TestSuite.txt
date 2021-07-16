@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 323.281 s <<< FAILURE! - in TestSuite
+loginTest(com.feescheduler.qa.login.LoginPageTest)  Time elapsed: 13.723 s  <<< FAILURE!
+java.lang.AssertionError: expected [RJHS] but found []
+	at com.feescheduler.qa.login.LoginPageTest.loginTest(LoginPageTest.java:84)
+
+createNewFeeSchedulerTest(com.feescheduler.qa.feeschedulertestcases.CreateNewFeeSchedulerTest)  Time elapsed: 157.361 s  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=91.0.4472.124)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-VUPTS4LP', ip: '192.168.225.141', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\MANASJ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b070f16181343cd5d47c42b83c7482a4
+	at com.feescheduler.qa.feeschedulertestcases.CreateNewFeeSchedulerTest.createNewFeeSchedulerTest(CreateNewFeeSchedulerTest.java:157)
+
